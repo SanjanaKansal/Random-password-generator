@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Password Generater</title>
+
+	<!--  -->
+
+	<style>
+
+	</style>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="container">
+	<div class="row">
+  <div class="col-xs-3" >
+	<i class="fa fa-key" aria-hidden="true" id="keyy"></i></div>
+	<div class="col-xs-9" >
+	<form action="">
+	
+	<div class="row">
+  <div class="col-xs-12" ><input type="text" name="" id="print" size="18"></div>
+
+</div>
+
+	<div class="row">
+  <div class="col-xs-12"><input type="button" value="Generate Password" onclick="passgen(this.form.write.value)" id="take" class="btn btn-success"></div>
+
+</div>
+	
+	
+	
+	
+		<div class="row">
+  <div class="col-xs-8">
+	<strong>Password Length</strong></div>
+  <div class="col-xs-4">
+	<input type="text" name="write" id="" value="6" size="2">
+</div>
+
+</div>
+	
+	</form>
+        </div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script>
+  var key="abcdefghijklmnopqrstuvwxyz1234567890@#$%&!*";
+           
+        function passgen(length)
+        {
+         var temp="";
+            for(var i=0;i<length;i++)
+               {
+                
+                   temp+=key.charAt(Math.floor(Math.random()*key.length));}
+        
+            document.getElementById("print").value=temp;
+            
+            
+            
+            
+            
+            
+            
+        }
+
+    
+	</script>
+
+</body>
+
+</html>
